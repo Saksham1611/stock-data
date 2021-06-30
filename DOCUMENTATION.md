@@ -12,11 +12,11 @@ Consume -  https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED
  
 Where symbol = MSFT is company name and is configurable.
 Below are few example of company names - 
-1) MSFT<br>
-2) ABB<br>
-3) AAL            AMERICAN AIRLINES GROUP INC<br>
-4) AAPL            APPLE INC<br>
-5) DELL            DELL TECHNOLOGIES INC<br>
+- 1) MSFT
+- 2) ABB
+- 3) AAL            
+- 4) AAPL            
+- 5) DELL            
  
  
 This API will return Time Series data per date of given company. 
