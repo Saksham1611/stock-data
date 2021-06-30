@@ -2,7 +2,8 @@
 
 Refer to  `DOCUMENTATION.md` for Problem Statement
 
-<BR>
+
+## BEFORE INSTALLING THE PROJECT EXPLORE `final.ipynb` TO GET AN OVERVIEW !!
 
 ### Install the project on your System 
 ```
