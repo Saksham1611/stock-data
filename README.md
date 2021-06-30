@@ -1,9 +1,8 @@
-## QUERY ON STOCK DATA
+# QUERY ON STOCK DATA
 
-Refer to  `DOCUMENTATION.md` for Problem Statement
+### BEFORE INSTALLING THE PROJECT , EXPLORE `final.ipynb` TO GET AN OVERVIEW !!
 
-
-## BEFORE INSTALLING THE PROJECT EXPLORE `final.ipynb` TO GET AN OVERVIEW !!
+### Refer to  `DOCUMENTATION.md` for Problem Statement
 
 ### Install the project on your System 
 ```
@@ -45,12 +44,29 @@ python CreateDb.py
 
 `Voila` Your Database is Created with all the entries
 
-## Rechecking /Testing /Addition 
 
-You can access all the functions inside the `final.ipynb` file , you can run the notebook for 
-seeing how each function is working and also add your own logic .
 
-### `test.py` and `app.py` 
-Work is still under progress as desired output format couldn't be obtained 
+### `test.py` and `app.py`
+```
+Run flask app : python app.py 
+
+Open other terminal to run the `test.py` file  
+
+Run : python test.py
+
+#change the url location or company as per your
+#requirements in the `test.py` file 
+```  
+#### POINTS TO REMEMBER
+```
+1) DATABASE PATH 
+2) CONNECTION IS BEING ESTABLISHED OR NOT
+3) QUERYING WITH THE CORRECT FORMAT OF COMPANY NAME
+4) CHECK THAT YOU ARE WRITING THE CORRECT URL PATH 
+
+```
+
+If anything is not clear from installation to running a query in browser
+You can revert me back, I'll be happy to sole your query  :) 
 
 
