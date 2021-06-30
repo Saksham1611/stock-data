@@ -10,9 +10,9 @@ import pathlib
 app=Flask(__name__)
 api=Api(app)
 
-DATABASE=pathlib.Path.cwd().joinpath('sqlite','db','consume.db') 
+db_path=pathlib.Path.cwd().joinpath('sqlite','db','consume.db') 
 
-conn=sqlite3.connect(DATABASE)
+conn=sqlite3.connect(db_path)
 cursor=conn.cursor()
 
 class Feature(Resource):
@@ -21,7 +21,6 @@ class Feature(Resource):
         query="SELECT Open ,high , low , close FROM shares WHERE company_name = " + company
         df=cursor.execute(query).fetchall()
         print(df)
-        return json.jsonify(df.to_dict())
         #df =pd.read_sql_query(query,conn)
         #print(json.)
         # df.to_csv("feature.csv",columns=labels, index=False)

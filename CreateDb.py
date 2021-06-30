@@ -91,7 +91,9 @@ def CreateEntry(conn,company_name):
 
 if __name__=="__main__":
     #query for creating column names
-
+    conn=createConnection(db_path)
+    cursor=conn.cursor()
+    
     sql_query= """ CREATE TABLE IF NOT EXISTS shares (
                                     company_name TEXT NOT NULL,
                                     dates TEXT NOT NULL,
@@ -103,13 +105,13 @@ if __name__=="__main__":
                                     volume REAL ,
                                     dividend_amount  REAL ,
                                     split_coefficient  REAL); """
-    conn=createConnection(db_path)
+    
     if conn:
         CreateTable(conn,sql_query)
         conn.commit()
     else:
         print("Error! cannot create the database connection.")
-    cursor=conn.cursor()
+
     count=cursor.execute("SELECT count(*) AS 'total_count' FROM shares").fetchall()
     rows=count[0][0]
     if rows<1:
